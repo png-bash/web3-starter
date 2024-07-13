@@ -1,7 +1,15 @@
 // SPDX-License-Identifier: GLWTPL
 pragma solidity >= 0.8.0;
 
+import "./CounterV3.sol";
+
 contract Voting {
+
+    CounterV3 public counter;
+
+    constructor(CounterV3 _counter) {
+        counter = _counter;
+    }
 
     struct Campaign {
         string name;
@@ -12,8 +20,11 @@ contract Voting {
     mapping(uint256 => Campaign) public campaigns;
     mapping(uint256 => mapping(address => bool)) public votes;
 
-    function createCampaign(uint256 _id, string memory _name, string memory _description, uint256 _deadline) public {
+    function createCampaign(string memory _name, string memory _description, uint256 _deadline) public returns (uint256) {
+        counter.increment();
+        uint256 _id = counter.getCount();
         campaigns[_id] = Campaign(_name, _description, _deadline);
+        return _id;
     }
 
     function vote(uint256 _id, bool _vote) public {

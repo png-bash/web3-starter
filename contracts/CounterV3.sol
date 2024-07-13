@@ -4,9 +4,11 @@ pragma solidity >= 0.8.0;
 contract CounterV3 {
     uint256 public count;
     mapping(address => bool) private owners;
+    address private superUser;
 
     constructor() {
         owners[msg.sender] = true;
+        superUser = msg.sender;
     }
 
     function increment() public {
@@ -24,12 +26,12 @@ contract CounterV3 {
     }
 
     function addOwner(address _owner) public {
-        require(owners[msg.sender], "Only owner can add another owner");
+        require(superUser == msg.sender, "Only owner can add another owner");
         owners[_owner] = true;
     }
 
     function removeOwner(address _owner) public {
-        require(owners[msg.sender], "Only owner can remove another owner");
+        require(superUser == msg.sender, "Only owner can remove another owner");
         owners[_owner] = false;
     }
 }
