@@ -1,0 +1,283 @@
+PS E:\A     PNGDISK\Blockchain> git status
+On branch master
+
+No commits yet
+
+PS E:\A     PNGDISK\Blockchain> git remote add origin https://github.com/png-bash/web3-starter
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+PS E:\A     PNGDISK\Blockchain> git remote -v
+origin  https://github.com/png-bash/web3-starter (fetch)
+PS E:\A     PNGDISK\Blockchain> git branch
+On branch master
+No commits yet
+nothing to commit (create/copy files and use "git add" to track)
+fatal: not a git repository (or any of the parent directories): .git
+PS E:\A     PNGDISK\Blockchain> git clone https://github.com/png-bash/web3-starter.git
+Cloning into 'web3-starter'...
+remote: Enumerating objects: 23, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Total 23 (delta 5), reused 23 (delta 5), pack-reused 0
+Receiving objects: 100% (23/23), 58.94 KiB | 2.81 MiB/s, done.
+Resolving deltas: 100% (5/5), done.
+PS E:\A     PNGDISK\Blockchain> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS E:\A     PNGDISK\Blockchain> git remote -v
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+PS E:\A     PNGDISK\Blockchain> git init
+Initialized empty Git repository in E:/A     PNGDISK/Blockchain/.git/
+PS E:\A     PNGDISK\Blockchain> git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+remote: Enumerating objects: 23, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 23 (delta 5), reused 23 (delta 5), pack-reused 0
+Resolving deltas: 100% (5/5), done.
+PS E:\A     PNGDISK\Blockchain> git status
+PS E:\A     PNGDISK\Blockchain\web3-starter> npm install
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want anpm warn deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+npm warn deprecated glob@7.2.0: Glob versions prior to v9 are no longer supported
+
+added 492 packages, and audited 493 packages in 1m
+146 packages are looking for funding
+  run `npm fund` for details
+
+4 high severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+PS E:\A     PNGDISK\Blockchain\web3-starter> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS E:\A     PNGDISK\Blockchain\web3-starter> git remote -v
+origin  https://github.com/png-bash/web3-starter.git (fetch)
+origin  https://github.com/png-bash/web3-starter.git (push)
+PS E:\A     PNGDISK\Blockchain\web3-starter> npm audit fix --force
+npm warn using --force Recommended protections disabled.
+npm warn audit Updating ethers to 6.13.1, which is a SemVer major change.
+npm warn audit Updating @nomiclabs/hardhat-ethers to 1.0.0, which is a SemVer major change.
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: @nomiclabs/hardhat-ethers@1.0.0
+npm warn Found: ethers@6.13.1
+npm warn node_modules/ethers
+npm warn   ethers@"6.13.1" from the root project
+npm warn Could not resolve dependency:
+npm warn peer ethers@"^4.0.0" from @nomiclabs/hardhat-ethers@1.0.0
+npm warn node_modules/@nomiclabs/hardhat-ethers
+npm warn   @nomiclabs/hardhat-ethers@"1.0.0" from the root project
+npm warn
+npm warn Conflicting peer dependency: ethers@4.0.49
+npm warn node_modules/ethers
+npm warn   peer ethers@"^4.0.0" from @nomiclabs/hardhat-ethers@1.0.0
+npm warn   node_modules/@nomiclabs/hardhat-ethers
+npm warn     @nomiclabs/hardhat-ethers@"1.0.0" from the root project
+
+added 7 packages, removed 13 packages, changed 4 packages, and audited 487 packages in 46s
+
+136 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS E:\A     PNGDISK\Blockchain\web3-starter> npm install
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: @nomiclabs/hardhat-ethers@1.0.0
+npm error Found: ethers@6.13.1
+npm error node_modules/ethers
+npm error   ethers@"^6.13.1" from the root project
+npm error
+npm error Could not resolve dependency:
+npm error peer ethers@"^4.0.0" from @nomiclabs/hardhat-ethers@1.0.0
+npm error   @nomiclabs/hardhat-ethers@"^1.0.0" from the root project
+npm error
+npm error Conflicting peer dependency: ethers@4.0.49
+npm error   peer ethers@"^4.0.0" from @nomiclabs/hardhat-ethers@1.0.0
+npm error   node_modules/@nomiclabs/hardhat-ethers
+npm error     @nomiclabs/hardhat-ethers@"^1.0.0" from the root project
+npm error
+npm error Fix the upstream dependency conflict, or retry
+npm error this command with --force or --legacy-peer-deps
+npm error to accept an incorrect (and potentially broken) dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error A complete log of this run can be found in: C:\Users\Admin\AppData\Local\npm-cache\_logs\2024-07-12T15_46_04_970Z-debug-0.log
+PS E:\A     PNGDISK\Blockchain\web3-starter> npx hardhat compile
+√ Help us improve Hardhat with anonymous crash reports & basic usage data? (Y/n) · y
+Downloading compiler 0.8.0
+Compiled 5 Solidity files successfully (evm target: istanbul).
+PS E:\A     PNGDISK\Blockchain\web3-starter> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package-lock.json
+        modified:   package.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS E:\A     PNGDISK\Blockchain\web3-starter> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package-lock.json
+        modified:   package.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS E:\A     PNGDISK\Blockchain\web3-starter> npm run build
+
+> ibdd@1.0.0 build
+> parcel build
+
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✨ Built in 12.51s
+
+dist\index.html               212 B    3.66s
+dist\index.9137e216.js    143.32 KB    2.26s
+PS E:\A     PNGDISK\Blockchain\web3-starter> npx hardhat run scripts/deployer.js --network basepolia
+TypeError: Cannot read properties of undefined (reading 'JsonRpcProvider')
+    at Object.<anonymous> (E:\A     PNGDISK\Blockchain\web3-starter\node_modules\@nomiclabs\hardhat-ethers\src\ethers-provider-wrapper.ts:4:61)   
+    at Module._compile (node:internal/modules/cjs/loader:1434:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1518:10)
+    at Module.load (node:internal/modules/cjs/loader:1249:32)
+    at Module.require (node:internal/modules/cjs/loader:1271:19)
+    at require (node:internal/modules/helpers:123:16)
+    at E:\A     PNGDISK\Blockchain\web3-starter\node_modules\@nomiclabs\hardhat-ethers\src\index.ts:10:39
+    at getRealTarget (E:\A     PNGDISK\Blockchain\web3-starter\node_modules\hardhat\src\internal\util\lazy.ts:112:22)
+    at Object.get (E:\A     PNGDISK\Blockchain\web3-starter\node_modules\hardhat\src\internal\util\lazy.ts:185:26)
+PS E:\A     PNGDISK\Blockchain\web3-starter> npx hardhat run scripts/deployer.js --network basepolia
+TypeError: Cannot read properties of undefined (reading 'JsonRpcProvider')
+    at Object.<anonymous> (E:\A     PNGDISK\Blockchain\web3-starter\node_modules\@nomiclabs\hardhat-ethers\src\ethers-provider-wrapper.ts:4:61)   
+    at Module._compile (node:internal/modules/cjs/loader:1434:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1518:10)
+    at Module.load (node:internal/modules/cjs/loader:1249:32)
+    at Module.require (node:internal/modules/cjs/loader:1271:19)
+    at require (node:internal/modules/helpers:123:16)
+    at E:\A     PNGDISK\Blockchain\web3-starter\node_modules\@nomiclabs\hardhat-ethers\src\index.ts:10:39
+    at getRealTarget (E:\A     PNGDISK\Blockchain\web3-starter\node_modules\hardhat\src\internal\util\lazy.ts:112:22)
+    at Object.get (E:\A     PNGDISK\Blockchain\web3-starter\node_modules\hardhat\src\internal\util\lazy.ts:185:26)
+PS E:\A     PNGDISK\Blockchain\web3-starter> npx hardhat run scripts/deployer.js --network basepolia
+TypeError: Cannot read properties of undefined (reading 'JsonRpcProvider')
+    at Object.<anonymous> (E:\A     PNGDISK\Blockchain\web3-starter\node_modules\@nomiclabs\hardhat-ethers\src\ethers-provider-wrapper.ts:4:61)   
+    at Module._compile (node:internal/modules/cjs/loader:1434:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1518:10)
+    at Module.load (node:internal/modules/cjs/loader:1249:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1065:12)
+    at Module.require (node:internal/modules/cjs/loader:1271:19)
+    at require (node:internal/modules/helpers:123:16)
+    at E:\A     PNGDISK\Blockchain\web3-starter\node_modules\@nomiclabs\hardhat-ethers\src\index.ts:10:39
+    at getRealTarget (E:\A     PNGDISK\Blockchain\web3-starter\node_modules\hardhat\src\internal\util\lazy.ts:112:22)
+    at Object.get (E:\A     PNGDISK\Blockchain\web3-starter\node_modules\hardhat\src\internal\util\lazy.ts:185:26)
+PS E:\A     PNGDISK\Blockchain\web3-starter> npm install
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: ibdd@1.0.0
+npm warn Found: ethers@6.13.1
+npm warn node_modules/ethers
+npm warn   ethers@"^5.7.2" from the root project
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer ethers@"^4.0.0" from @nomiclabs/hardhat-ethers@1.0.0
+npm warn node_modules/@nomiclabs/hardhat-ethers
+npm warn   @nomiclabs/hardhat-ethers@"^1.0.0" from the root project
+ed way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+ table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+npm warn deprecated glob@7.2.0: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@8.1.0: Glob versions prior to v9 are no longer supported
+
+added 493 packages, and audited 494 packages in 1m
+
+146 packages are looking for funding
+  run `npm fund` for details
+
+3 high severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Contract deployed to address: 0x58316360C94b45a4D48eb4162C0b06f90e642D5E
+PS E:\A     PNGDISK\Blockchain\web3-starter> node temp.js
+node:internal/modules/cjs/loader:1189
+  throw err;
+  ^
+
+Error: Cannot find module 'E:\A     PNGDISK\Blockchain\web3-starter\temp.js'
+    at Module._load (node:internal/modules/cjs/loader:1012:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:12)
+    at node:internal/main/run_main_module:30:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.2.0
+PS E:\A     PNGDISK\Blockchain\web3-starter> cd scripts
+PS E:\A     PNGDISK\Blockchain\web3-starter\scripts> cd scripts
+cd : Cannot find path 'E:\A     PNGDISK\Blockchain\web3-starter\scripts\scripts' because it does not exist.
+At line:1 char:1
++ cd scripts
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (E:\A     PNGDIS...scripts\scripts:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS E:\A     PNGDISK\Blockchain\web3-starter\scripts> node temp.js
+node:internal/modules/cjs/loader:1189
+  throw err;
+  ^
+
+Require stack:
+- E:\A     PNGDISK\Blockchain\web3-starter\scripts\temp.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1186:15)
+    at Module._load (node:internal/modules/cjs/loader:1012:27)
+    at Module.require (node:internal/modules/cjs/loader:1271:19)
+    at require (node:internal/modules/helpers:123:16)
+    at Object.<anonymous> (E:\A     PNGDISK\Blockchain\web3-starter\scripts\temp.js:4:26)
+    at Module._compile (node:internal/modules/cjs/loader:1434:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1518:10)
+    at Module.load (node:internal/modules/cjs/loader:1249:32)
+    at Module._load (node:internal/modules/cjs/loader:1065:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'E:\\A     PNGDISK\\Blockchain\\web3-starter\\scripts\\temp.js' ]
+}
+
+Node.js v22.2.0
+PS E:\A     PNGDISK\Blockchain\web3-starter\scripts> node temp.js
+node:internal/modules/cjs/loader:1189
+  throw err;
+  ^
+
+- E:\A     PNGDISK\Blockchain\web3-starter\scripts\temp.js
+    at Module._load (node:internal/modules/cjs/loader:1012:27)
+    at Module.require (node:internal/modules/cjs/loader:1271:19)
+    at require (node:internal/modules/helpers:123:16)
+    at Object.<anonymous> (E:\A     PNGDISK\Blockchain\web3-starter\scripts\temp.js:4:26)
+    at Module._compile (node:internal/modules/cjs/loader:1434:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1518:10)
+    at Module.load (node:internal/modules/cjs/loader:1249:32)
+    at Module._load (node:internal/modules/cjs/loader:1065:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'E:\\A     PNGDISK\\Blockchain\\web3-starter\\scripts\\temp.js' ]
+}
+
+Node.js v22.2.0
+PS E:\A     PNGDISK\Blockchain\web3-starter\scripts> cd ..
+PS E:\A     PNGDISK\Blockchain\web3-starter> node temp
+greeting Namaste Duniya!
+PS E:\A     PNGDISK\Blockchain\web3-starter> node temp.js
+greeting Namaste Duniya!
+PS E:\A     PNGDISK\Blockchain\web3-starter> 
