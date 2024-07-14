@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 
+
 import contractArtifact from '../artifacts/contracts/CounterV1.sol/CounterV1.json';
 
 export function App() {
@@ -58,6 +59,12 @@ export function App() {
       setContract(contract);
     }
   }, [provider]);
+
+  useEffect(() => {
+      console.log("New count", count)
+  }, [count]);
+
+  useEffect
 
   useEffect(() => {
     if (contract) {

@@ -1,5 +1,5 @@
 async function main() {
-  const Contract = await ethers.getContractFactory("NamasteDuniya");
+  const Contract = await ethers.getContractFactory("CounterV4");
   const deployedContract = await Contract.deploy();
 
 
